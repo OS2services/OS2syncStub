@@ -23,4 +23,4 @@ COPY --from=build ${TARGET}/sts-organisation-integration.jar .
 
 EXPOSE 8998
 
-ENTRYPOINT ["java", "-Xmx128m", "-jar", "sts-organisation-integration.jar"]
+ENTRYPOINT ["java", "-Dloader.path=config/*", "-Xmx128m", "-jar", "sts-organisation-integration.jar"]

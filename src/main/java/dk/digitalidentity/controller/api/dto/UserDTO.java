@@ -12,4 +12,5 @@ public class UserDTO {
 	private String phone;
 	private String email;
 	private String dtrId;
+	private boolean manager;
 }
